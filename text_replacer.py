@@ -79,8 +79,8 @@ def replacer(file_name, text_to_be_replaced, replacement):
         content = content.replace(text_to_be_replaced, replacement)
 
         # removes the content of the file
-        f.seek(0) # Go to the beginning of the file
-        f.truncate() # Remove the content of the file
+        f.seek(0)  # Go to the beginning of the file
+        f.truncate()  # Remove the content of the file
 
         # writes the updated content to the file
         f.write(content)
